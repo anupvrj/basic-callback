@@ -7,15 +7,25 @@ function getPost() {
     })
 }
 
-const createPost = (postdata) => {
-    return new Promise((resolve, reject) => {
+// const createPost = (postdata) => {
+//     return new Promise((resolve, reject) => {
 
-    posts.push(postdata);
-    true? resolve():reject("Error Found");
+//     posts.push(postdata);
+//     true? resolve():reject("Error Found");
+//     }
+
+//     );
+// }
+
+const createPost =  new Promise((resolve, reject) => {
+
+    if(true)
+    resolve(posts.push({ postTitle: "Post 3", postBody: "This is Post 3" }));
+    else reject("Error Found");
     }
 
     );
-}
-createPost({ postTitle: "Post 3", postBody: "This is Post 3" })
-.then(getPost)
+
+
+createPost.then(getPost)
 .catch(err => console.log(err));
