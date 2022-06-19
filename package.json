@@ -1,0 +1,11 @@
+{
+  "name": "basic-callback",
+  "version": "1.0.0",
+  "description": "basic Callback",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Anup Kumar",
+  "license": "ISC"
+}
